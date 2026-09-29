@@ -1,0 +1,16 @@
+# PyCharm
+.idea/
+
+# Python and Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Nextflow generated files
+work/
+.nextflow/
+.nextflow.log*
+
+# Generated pipeline results
+results/
+test_results
