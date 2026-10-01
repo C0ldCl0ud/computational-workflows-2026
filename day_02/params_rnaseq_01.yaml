@@ -1,0 +1,5 @@
+input: samplesheets/samplesheet.csv
+save_align_intermeds: true
+genome: GRCm38
+aligner: hisat2
+outdir: ./results/initial

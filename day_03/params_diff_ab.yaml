@@ -1,0 +1,7 @@
+input: data/samplesheet.csv
+matrix: data/matrix.csv
+feature_length_matrix: data/lengths.csv
+contrasts: data/contrasts.csv
+features: data/features.csv
+seed: 42
+outdir: results/diff_ab
