@@ -1,11 +1,13 @@
-FROM debian:bullseye-slim
+FROM debian:bookworm-slim
 
-LABEL image.author.name="yourname"
-LABEL image.author.email="yourmail"
+LABEL image.author.name="Matthias Lang"
+LABEL image.author.email="matthias.lang@student.uni-tuebingen.de"
 
 # Install dependencies
 
 # Download and install Salmon
+RUN apt-get update && \
+    apt-get install -y salmon && \
+    rm -rf /var/lib/apt/lists/*
 
-# Set the PATH environment variable (to /usr/bin)
-
+# Set the PATH environment variable (to /usr/bin) -- should be in PATH by default
