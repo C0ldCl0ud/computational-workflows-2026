@@ -14,3 +14,9 @@ work/
 # Generated pipeline results
 results/
 test_results
+
+*.fastq.gz*
+*.csv
+
+*zip
+*html
