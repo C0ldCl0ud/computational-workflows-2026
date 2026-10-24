@@ -81,11 +81,11 @@ process ZIP{
     path input
 
     output:
-    path "${input}.gz"
+    path("${input.baseName}.zip")
 
     script:
     """
-    gzip -c "${input}" > ${input}.gz
+    zip ${input.baseName}.zip ${input}
     """
 }
 
